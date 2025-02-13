@@ -1,14 +1,14 @@
 let createPart = document.getElementById('jsCreatePart');
 
-let videoPart = document.createElement('video');
+let videoPart = document.createElement('iframe');
 videoPart.id = "videoLoad";
-videoPart.classList.add = "videoLoaded";
-videoPart.width = "400px";
-videoPart.height = "320px";
-videoPart.attributes = "controls";
+videoPart.classList.add("videoLoaded");
+videoPart.width = 400;
+videoPart.height = 320;
+videoPart.setAttribute('controls');
+videoPart.setAttribute("src", "https://www.youtube.com/embed/NLi2v-Gq-5A");
+videoPart.setAttribute("frameborder", "0");
+videoPart.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+videoPart.setAttribute("allowfullscreen", "");
 
-let video = document.createElement("source");
-video.src = "https://www.youtube.com/watch?v=NLi2v-Gq-5A&list=RDNLi2v-Gq-5A&start_radio=1";
-
-videoPart.appendChild(video);
 createPart.appendChild(videoPart);
