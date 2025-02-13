@@ -38,6 +38,19 @@
     <script>
         const root = ReactDOM.createRoot(document.getElementById("root"));
         root.render(React.createElement("h1", null, "Hello, React!"));
+
+        function Video({ video }) {
+        return (
+            <div>
+            <Thumbnail video={video} />
+            <a href={video.url}>
+                <h3>{video.title}</h3>
+                <p>{video.description}</p>
+            </a>
+            <LikeButton video={video} />
+            </div>
+        );
+        }
     </script>
     </body>
 </html>
