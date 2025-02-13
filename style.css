@@ -10,8 +10,10 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    background-color: #00ffff;
+    background-color: linear-gradient(#379797,#b64848);
+    
     color: #fff;
+    font-family: Arial;
 
 }
 
