@@ -6,12 +6,14 @@
 
 :root {
     --white-color: #fff;
+    --cyan-color: #e0ffff;
+    --green-color: #008000;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: lightcyan;
+    background-color: var(--cyan-color) ;
 }
 
 .banner {
@@ -38,17 +40,28 @@ body {
     margin: 0;
 }
 
-.firstsection{
+.first-section{
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 20px;
     background-color: var(--white-color);
 }
 
-.firstsection .fs16{
+.fs16{
     font-size: 16px;
 }
-
-.firstsection .fs12{
+.fs12{
     font-size: 12px;
 }
 
+.no-connection{
+    margin: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: var(--cyan-color);
+}
+
+.add-connector{
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
