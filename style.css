@@ -58,15 +58,23 @@ body {
     margin: 10px;
     padding: 10px;
     padding-top: 15px;
+    padding-left: none;
     background-color: var(--cyan-color);
 }
 
 #add-connector{
-    padding: 2px;
+    padding: 4px;
     color: var(--white-color);
     background-color: var(--green-color);
-    border-color: var(--green-color);
+    border: transparent;
     border-radius: 2px;
     height: auto;
     width: auto;
+}
+
+#add-connection:hover{
+    color: var(--green-color);
+    background-color: var(--white-color);
+    border: 1px;
+    border-color: var(--green-color);
 }
