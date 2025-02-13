@@ -64,6 +64,8 @@ body {
 #add-connector{
     color: var(--white-color);
     background-color: var(--green-color);
+    border-color: var(--green-color);
+    border-radius: 10%;
     height: auto;
     width: auto;
 }
