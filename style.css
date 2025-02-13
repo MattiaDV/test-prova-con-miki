@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --white-color: #fff;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -23,16 +28,16 @@ body {
 }
 
 .banner .text h1 {
-    color: white;
+    color: var(--white-color);
     margin: 0;
 }
 
 .banner .text p {
-    color: white;
+    color: var(--white-color);
     margin: 0;
 }
 
 .primasezione{
     padding: 5px;
-    background-color: white;
+    background-color: var(--white-color);
 }
