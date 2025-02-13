@@ -7,7 +7,7 @@
 :root {
     --white-color: #fff;
     --cyan-color: #e0ffff;
-    --green-color: #008000;
+    --green-color: #448644;
 }
 
 body {
@@ -62,10 +62,11 @@ body {
 }
 
 #add-connector{
+    padding: 2px;
     color: var(--white-color);
     background-color: var(--green-color);
     border-color: var(--green-color);
-    border-radius: 10%;
+    border-radius: 30%;
     height: auto;
     width: auto;
 }
