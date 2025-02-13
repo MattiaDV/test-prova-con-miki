@@ -22,12 +22,12 @@ body {
     margin-right: 15px;
 }
 
-.text h1 {
+.banner .text h1 {
     color: white;
     margin: 0;
 }
 
-.text p {
+.banner .text p {
     color: white;
     margin: 0;
 }
