@@ -3,3 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.banner{        /* striscia blu all'inizio della pagina*/
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #00ffff;
+}
+
+.banner.fs20{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.banner.fs16{
+    font-size: 16px;
+    color: #ffff;
+}
