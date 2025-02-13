@@ -39,14 +39,16 @@ body {
 }
 
 .firstsection{
+    margin: 10px;
     padding: 5px;
     background-color: var(--white-color);
-}
-
-.firstsection .fs20{
-    font-size: 20px;
 }
 
 .firstsection .fs16{
     font-size: 16px;
 }
+
+.firstsection .fs12{
+    font-size: 12px;
+}
+
