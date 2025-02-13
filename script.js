@@ -20,7 +20,8 @@ let likeC = document.createElement('div');
 likeC.style.width = "45px";
 likeC.style.height = "45px";
 likeC.id = "likeButton";
-likeC.style.borderRadius = "50%";
+likeC.style.borderTopRightRadius = "50%";
+likeC.style.borderTopLeftRadius = "50%";
 likeC.style.background = "#CCC";
 likeC.onclick = function() {
     addRemoveLike();
