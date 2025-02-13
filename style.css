@@ -82,3 +82,8 @@ body {
     height: auto;
     width: auto;
 }
+
+video {
+    padding: 20px;
+    background: red;
+}
