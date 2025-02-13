@@ -36,8 +36,6 @@
 
     <!-- Il tuo script -->
     <script>
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(React.createElement("h1", null, "Hello, React!"));
 
         function Video({ video }) {
         return (
@@ -52,7 +50,8 @@
         );
         }
 
-        Video('aaa.html');
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<Video video={exampleVideo} />);
     </script>
     </body>
 </html>
