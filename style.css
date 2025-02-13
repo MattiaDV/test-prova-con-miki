@@ -57,7 +57,7 @@ body {
 .no-connection{
     margin: 10px;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
     background-color: var(--cyan-color);
 }
 
@@ -66,7 +66,7 @@ body {
     color: var(--white-color);
     background-color: var(--green-color);
     border-color: var(--green-color);
-    border-radius: 30%;
+    border-radius: 2px;
     height: auto;
     width: auto;
 }
