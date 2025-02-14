@@ -6,13 +6,13 @@ let st = "all";
 document.getElementById('allFilters').innerHTML = `All(${allFilters})`;
 document.getElementById('activeFilters').innerHTML = `Active(${activeFilters})`;
 document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilters})`;
-document.getElementById('status').innerHTML = `status: ${st}`;
-function changeStatus(stat,change){
-    if(stat!==change){
-        stat = change;
-        console.log(stat);
+document.getElementById('st').innerHTML = `status: ${st}`;
+function changeStatus(change){
+    if(st!==change){
+        st = change;
+        console.log(st);
     }
-    return stat;
+    return st;
 }
 
 
