@@ -88,10 +88,11 @@ hr{
     height: 1px;
 }
 
-.second-section{
+.second-session{
     margin: 10px;
     padding: 10px;
-    padding-top: 20px;   
+    padding-top: 20px; 
+    background-color: var(--white-color);  
 }
 
 video {
