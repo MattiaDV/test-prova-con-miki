@@ -1,3 +1,20 @@
+//prova funzione filtri
+let activeFilters = 2;
+let inactiveFilters = 1;
+let allFilters = activeFilters + inactiveFilters;
+
+document.getElementById('allFilters').innerHTML = `All(${allFilters})`;
+document.getElementById('activeFilters').innerHTML = `Active(${activeFilters})`;
+document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilters})`;
+
+
+
+
+
+
+
+
+
 let createPart = document.getElementById('jsCreatePart');
 
 let videoPart = document.createElement('iframe');

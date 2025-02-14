@@ -83,6 +83,10 @@ body {
     width: auto;
 }
 
+hr{
+    padding: 5px;
+}
+
 video {
     padding: 20px;
     background: red;
