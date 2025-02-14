@@ -95,6 +95,12 @@ hr{
     background-color: var(--white-color);  
 }
 
+.filters{
+    font-size: 12px;
+    padding: 5px;
+    color: var(--green-color);
+}
+
 video {
     padding: 20px;
     background: red;
