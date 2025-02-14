@@ -1,6 +1,6 @@
 //prova funzione filtri
-let activeFilters = 2;
-let inactiveFilters = 1;
+let activeFilters = 0;
+let inactiveFilters = 0;
 let allFilters = activeFilters + inactiveFilters;
 
 document.getElementById('allFilters').innerHTML = `All(${allFilters})`;
