@@ -10,6 +10,7 @@ document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilte
 
 function changeStatus(change){
     let status = change;
+    window.alert(status);
     return status;
 }
 
