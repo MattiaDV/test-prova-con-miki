@@ -2,17 +2,16 @@
 let activeFilters = 0;
 let inactiveFilters = 0;
 let allFilters = activeFilters + inactiveFilters;
-let st = "all";
+let sta = localStorage.getItem("st") || "all";
 document.getElementById('allFilters').innerHTML = `All(${allFilters})`;
 document.getElementById('activeFilters').innerHTML = `Active(${activeFilters})`;
 document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilters})`;
-document.getElementById('st').innerHTML = `status: ${st}`;
+document.getElementById('st').innerHTML = `status: ${sta}`;
 function changeStatus(change){
-    if(st!==change){
-        st = change;
-        console.log(st);
+    if(sta!==change){
+        localStorage.setItem(sta,change);
     }
-    return st;
+    return sta;
 }
 
 
