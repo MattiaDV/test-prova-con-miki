@@ -9,7 +9,7 @@ document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilte
 document.getElementById('st').innerHTML = `status: ${sta}`;
 function changeStatus(change){
     if(sta!==change){
-        localStorage.setItem(sta,change);
+        localStorage.setItem('st',change);
     }
     return sta;
 }
