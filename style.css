@@ -88,6 +88,12 @@ hr{
     height: 1px;
 }
 
+.second-section{
+    margin: 10px;
+    padding: 10px;
+    padding-top: 20px;   
+}
+
 video {
     padding: 20px;
     background: red;
