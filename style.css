@@ -92,7 +92,6 @@ hr{
     margin: 10px;
     padding: 10px;
     padding-top: 20px; 
-    background-color: var(--white-color);  
 }
 
 .filters{
@@ -100,6 +99,12 @@ hr{
     padding: 5px;
     padding-left: 0px;
     color: var(--green-color);
+    
+}
+
+.connectors{
+    background-color: var(--white-color);
+    font-size: 16px;
 }
 
 video {

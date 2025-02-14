@@ -2,12 +2,16 @@
 let activeFilters = 0;
 let inactiveFilters = 0;
 let allFilters = activeFilters + inactiveFilters;
+let status = "all";
 
 document.getElementById('allFilters').innerHTML = `All(${allFilters})`;
 document.getElementById('activeFilters').innerHTML = `Active(${activeFilters})`;
 document.getElementById('inactiveFilters').innerHTML = `Inactive(${inactiveFilters})`;
 
-
+function changeStatus(change){
+    let status = change;
+    return status;
+}
 
 
 
