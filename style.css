@@ -98,6 +98,7 @@ hr{
 .filters{
     font-size: 12px;
     padding: 5px;
+    padding-left: 0px;
     color: var(--green-color);
 }
 
