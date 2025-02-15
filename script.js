@@ -99,7 +99,7 @@ actC.innerHTML = "Active(" + act + ")";
 inaC.innerHTML = "Inactive(" + ina + ")";
 
 actC.addEventListener('click', function()  {
-    for (let c of conn) {
+    for (let c of connector) {
         if (c.classList.contains('active')) {
             c.style.display = "block";
         } else {
@@ -109,7 +109,7 @@ actC.addEventListener('click', function()  {
 })
 
 inaC.addEventListener('click', function()  {
-    for (let c of conn) {
+    for (let c of connector) {
         if (c.classList.contains('active')) {
             c.style.display = "none";
         } else {
@@ -119,7 +119,7 @@ inaC.addEventListener('click', function()  {
 })
 
 allC.addEventListener('click', function()  {
-    for (let c of conn) {
+    for (let c of connector) {
         c.style.display = "block";
     }
 })
