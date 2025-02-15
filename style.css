@@ -73,6 +73,17 @@ body {
     width: auto;
 }
 
+.connector {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 10px;
+}
+
+.connector.active {
+    background: lightgreen;
+}
+
 #add-connector:hover{
     color: var(--green-color);
     background-color: var(--white-color);
