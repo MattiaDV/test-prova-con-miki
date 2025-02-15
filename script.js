@@ -21,6 +21,30 @@ let actC = document.getElementById('activeFilters');
 let act = 0;
 let ina = 0;
 
+// PER FARLO PASSARE
+for (let c of connector) {
+    c.addEventListener('click', function() {
+        act = 0;
+        ina = 0;
+        if (c.classList.contains('active')) {
+            c.classList.remove('active');
+            c.classList.add('inactive');
+        } else {
+            c.classList.remove('inactive');
+            c.classList.add('active');
+        }
+        for (let c of connector) {
+            if (c.classList.contains('active')) {
+                act++;
+            } else if (c.classList.contains('inactive')) {
+                ina++;
+            }
+        }
+        actC.innerHTML = "Active(" + act + ")";
+        inaC.innerHTML = "Inactive(" + ina + ")";
+    });
+}
+
 allC.innerHTML = "All(" + connector.length + ")";
 
 for (let c of connector) {
