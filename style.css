@@ -137,7 +137,6 @@ hr{
 }
 
 .connectors{
-    background-color: var(--white-color);
     font-size: 16px;
     display: flex;
     justify-content: flex-start;
@@ -145,6 +144,11 @@ hr{
     gap: 20px;
 }
 
+.single-connector{
+    background-color: var(--white-color);
+    width: auto;
+    height: auto;
+}
 video {
     padding: 20px;
     background: red;
