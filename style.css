@@ -147,8 +147,10 @@ hr{
 .single-connector{
     background-color: var(--white-color);
     align-items: center;
-    aspect-ratio: 1/1;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
 }
 
 .icon{
