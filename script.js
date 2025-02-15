@@ -20,7 +20,8 @@ let inaC = document.getElementById('inactiveFilters');
 let actC = document.getElementById('activeFilters');
 let myConnector = document.getElementById('noConnection');
 let act = 0;
-let ina = 0;
+let ina = 0; 
+let conn = document.getElementById('connectionYet');
 
 // PER FARLO PASSARE
 for (let c of connector) {
@@ -48,6 +49,11 @@ for (let c of connector) {
             } else if (c.classList.contains('inactive')) {
                 ina++;
             }
+        }
+        if (act == 0) {
+            conn.style.display = "flex";
+        } else {
+            conn.style.display = "none";
         }
         actC.innerHTML = "Active(" + act + ")";
         inaC.innerHTML = "Inactive(" + ina + ")";
