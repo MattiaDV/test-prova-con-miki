@@ -60,6 +60,17 @@ body {
     padding-top: 15px;
     padding-left: none;
     background-color: var(--cyan-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.connectorActives {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 
 #add-connector{
@@ -79,6 +90,18 @@ body {
     background: red;
     margin: 10px;
 }
+
+.connector-ac {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 10px;
+}
+
+.connector-ac.active {
+    background: lightgreen;
+}
+
 
 .connector.active {
     background: lightgreen;
@@ -116,6 +139,10 @@ hr{
 .connectors{
     background-color: var(--white-color);
     font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
 }
 
 video {
