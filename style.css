@@ -99,10 +99,6 @@ body {
     margin: 10px;
 }
 
-.connector-ac.active {
-    background: lightgreen;
-}
-
 
 .connector.active {
     background: lightgreen;
