@@ -85,9 +85,10 @@ body {
 }
 
 .connector {
-    width: 40px;
-    height: 40px;
-    background: red;
+    width: 70px;
+    height: 30px;
+    background-color: var(--green-color);
+    color: var(--white-color);
     margin: 10px;
 }
 
@@ -155,9 +156,10 @@ hr{
 
 .icon{
     
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
+
 
 video {
     padding: 20px;
