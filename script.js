@@ -36,15 +36,19 @@ for (let c of aaa) {
             c.classList.add('inactive');
 
             // Trova e rimuovi il clone esistente
-            let existingClone = document.querySelector('.connector-ac');
-            if (existingClone) existingClone.remove();
+            let existingClone = document.querySelectorAll('.connector-ac');
+            for (let exc of existingClone) {
+                if (exc.id == c.id) {
+                    exc.remove();
+                }
+            }
 
         } else {
             c.classList.remove('inactive');
             c.classList.add('active');
 
             // Clona l'elemento originale
-            var originalElement = document.querySelector('.single-connector');
+            var originalElement = c.closest('.single-connector');
             var clonedElement = originalElement.cloneNode(true);
 
             // Assegna la classe 'connector-ac' al clone
