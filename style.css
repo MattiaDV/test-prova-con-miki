@@ -80,6 +80,18 @@ body {
     margin: 10px;
 }
 
+.connector-ac {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 10px;
+}
+
+.connector-ac.active {
+    background: lightgreen;
+}
+
+
 .connector.active {
     background: lightgreen;
 }

@@ -18,7 +18,7 @@ let connector = document.querySelectorAll('.connector');
 let allC = document.getElementById('allFilters');
 let inaC = document.getElementById('inactiveFilters');
 let actC = document.getElementById('activeFilters');
-let myConnector = document.getElementById('activeFilters');
+let myConnector = document.getElementById('noConnection');
 let act = 0;
 let ina = 0;
 
@@ -27,12 +27,20 @@ for (let c of connector) {
     c.addEventListener('click', function() {
         act = 0;
         ina = 0;
+        let acCon = document.createElement('div');
         if (c.classList.contains('active')) {
             c.classList.remove('active');
             c.classList.add('inactive');
+
+            let acoc = document.querySelector('.connector-ac');
+            acoc.remove();
         } else {
             c.classList.remove('inactive');
             c.classList.add('active');
+            
+            acCon.classList.add('connector-ac');
+            acCon.classList.add("active");
+            myConnector.appendChild(acCon);
         }
         for (let c of connector) {
             if (c.classList.contains('active')) {
@@ -44,6 +52,15 @@ for (let c of connector) {
         actC.innerHTML = "Active(" + act + ")";
         inaC.innerHTML = "Inactive(" + ina + ")";
     });
+}
+
+for (let c of connector) {
+    if (c.classList.contains('active')) {
+        let acCon = document.createElement('div');
+        acCon.classList.add('connector-ac');
+        acCon.classList.add("active");
+        myConnector.appendChild(acCon);
+    }
 }
 
 allC.innerHTML = "All(" + connector.length + ")";
