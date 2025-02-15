@@ -146,11 +146,13 @@ hr{
 
 .single-connector{
     background-color: var(--white-color);
+    align-items: center;
     aspect-ratio: 1/1;
     height: auto;
 }
 
 .icon{
+    
     width: 40px;
     height: 40px;
 }
