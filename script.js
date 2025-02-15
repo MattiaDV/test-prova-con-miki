@@ -1,5 +1,5 @@
 //prova funzione filtri
-let activeFilters = 0;
+/* let activeFilters = 0;
 let inactiveFilters = 0;
 let allFilters = activeFilters + inactiveFilters;
 let sta = localStorage.getItem('st') || 'all';
@@ -12,7 +12,77 @@ function changeStatus(change){
         localStorage.setItem('st',change);
     }
     return sta;
+} */
+
+let connector = document.querySelectorAll('.connector');
+let allC = document.getElementById('allFilters');
+let inaC = document.getElementById('inactiveFilters');
+let actC = document.getElementById('activeFilters');
+let act = 0;
+let ina = 0;
+
+// PER FARLO PASSARE
+for (let c of connector) {
+    c.addEventListener('click', function() {
+        act = 0;
+        ina = 0;
+        if (c.classList.contains('active')) {
+            c.classList.remove('active');
+            c.classList.add('inactive');
+        } else {
+            c.classList.remove('inactive');
+            c.classList.add('active');
+        }
+        for (let c of connector) {
+            if (c.classList.contains('active')) {
+                act++;
+            } else if (c.classList.contains('inactive')) {
+                ina++;
+            }
+        }
+        actC.innerHTML = "Active(" + act + ")";
+        inaC.innerHTML = "Inactive(" + ina + ")";
+    });
 }
+
+allC.innerHTML = "All(" + connector.length + ")";
+
+for (let c of connector) {
+    if (c.classList.contains('active')) {
+        act++;
+    } else if (c.classList.contains('inactive')) {
+        ina++;
+    }
+}
+
+actC.innerHTML = "Active(" + act + ")";
+inaC.innerHTML = "Inactive(" + ina + ")";
+
+actC.addEventListener('click', function()  {
+    for (let c of connector) {
+        if (c.classList.contains('active')) {
+            c.style.display = "block";
+        } else {
+            c.style.display = "none";
+        }
+    }
+})
+
+inaC.addEventListener('click', function()  {
+    for (let c of connector) {
+        if (c.classList.contains('active')) {
+            c.style.display = "none";
+        } else {
+            c.style.display = "block";
+        }
+    }
+})
+
+allC.addEventListener('click', function()  {
+    for (let c of connector) {
+        c.style.display = "block";
+    }
+})
 
 
 
