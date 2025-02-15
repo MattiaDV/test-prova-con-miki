@@ -41,7 +41,10 @@ for (let c of connector) {
             
             acCon.classList.add('connector-ac');
             acCon.classList.add("active");
-            myConnector.appendChild(acCon);
+
+            var originalElement = document.querySelector('.single-connector');
+            var clonedElement = originalElement.cloneNode(true);
+            myConnector.appendChild(clonedElement);
         }
         for (let c of connector) {
             if (c.classList.contains('active')) {
