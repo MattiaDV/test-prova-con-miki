@@ -18,6 +18,7 @@ let connector = document.querySelectorAll('.connector');
 let allC = document.getElementById('allFilters');
 let inaC = document.getElementById('inactiveFilters');
 let actC = document.getElementById('activeFilters');
+let myConnector = document.getElementById('activeFilters');
 let act = 0;
 let ina = 0;
 
