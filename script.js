@@ -22,9 +22,10 @@ let myConnector = document.getElementById('noConnection');
 let act = 0;
 let ina = 0; 
 let conn = document.getElementById('connectionYet');
+let aaa = document.querySelectorAll('.single-connector');
 
 // PER FARLO PASSARE
-for (let c of connector) {
+for (let c of aaa) {
     c.addEventListener('click', function() {
         act = 0;
         ina = 0;
@@ -54,7 +55,7 @@ for (let c of connector) {
         }
 
         // Aggiorna contatori di attivi e inattivi
-        for (let c of connector) {
+        for (let c of aaa) {
             if (c.classList.contains('active')) {
                 act++;
             } else if (c.classList.contains('inactive')) {
@@ -76,7 +77,7 @@ for (let c of connector) {
 }
 
 
-for (let c of connector) {
+for (let c of aaa) {
     if (c.classList.contains('active')) {
         let acCon = document.createElement('div');
         acCon.classList.add('connector-ac');
@@ -87,7 +88,7 @@ for (let c of connector) {
 
 allC.innerHTML = "All(" + connector.length + ")";
 
-for (let c of connector) {
+for (let c of aaa) {
     if (c.classList.contains('active')) {
         act++;
     } else if (c.classList.contains('inactive')) {
@@ -99,9 +100,9 @@ actC.innerHTML = "Active(" + act + ")";
 inaC.innerHTML = "Inactive(" + ina + ")";
 
 actC.addEventListener('click', function()  {
-    for (let c of connector) {
+    for (let c of aaa) {
         if (c.classList.contains('active')) {
-            c.style.display = "block";
+            c.style.display = "flex";
         } else {
             c.style.display = "none";
         }
@@ -109,18 +110,18 @@ actC.addEventListener('click', function()  {
 })
 
 inaC.addEventListener('click', function()  {
-    for (let c of connector) {
+    for (let c of aaa) {
         if (c.classList.contains('active')) {
             c.style.display = "none";
         } else {
-            c.style.display = "block";
+            c.style.display = "flex";
         }
     }
 })
 
 allC.addEventListener('click', function()  {
-    for (let c of connector) {
-        c.style.display = "block";
+    for (let c of aaa) {
+        c.style.display = "flex";
     }
 })
 
