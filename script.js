@@ -28,24 +28,32 @@ for (let c of connector) {
     c.addEventListener('click', function() {
         act = 0;
         ina = 0;
-        let acCon = document.createElement('div');
+
+        // Se l'elemento è attivo, rimuovi il clone
         if (c.classList.contains('active')) {
             c.classList.remove('active');
             c.classList.add('inactive');
 
-            let acoc = document.querySelector('.connector-ac');
-            acoc.remove();
+            // Trova e rimuovi il clone esistente
+            let existingClone = document.querySelector('.connector-ac');
+            if (existingClone) existingClone.remove();
+
         } else {
             c.classList.remove('inactive');
             c.classList.add('active');
-            
-            acCon.classList.add('connector-ac');
-            acCon.classList.add("active");
 
+            // Clona l'elemento originale
             var originalElement = document.querySelector('.single-connector');
             var clonedElement = originalElement.cloneNode(true);
+
+            // Assegna la classe 'connector-ac' al clone
+            clonedElement.classList.add('connector-ac');
+
+            // Aggiungi il clone al DOM
             myConnector.appendChild(clonedElement);
         }
+
+        // Aggiorna contatori di attivi e inattivi
         for (let c of connector) {
             if (c.classList.contains('active')) {
                 act++;
@@ -53,15 +61,20 @@ for (let c of connector) {
                 ina++;
             }
         }
+
+        // Mostra o nascondi la connessione
         if (act == 0) {
             conn.style.display = "flex";
         } else {
             conn.style.display = "none";
         }
+
+        // Aggiorna il contatore degli attivi e inattivi
         actC.innerHTML = "Active(" + act + ")";
         inaC.innerHTML = "Inactive(" + ina + ")";
     });
 }
+
 
 for (let c of connector) {
     if (c.classList.contains('active')) {
